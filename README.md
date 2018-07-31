@@ -42,7 +42,7 @@ something like this
       ref="driverMarker"
       :duration="2000"
   />
-</ l-map>
+</l-map>
 ```
 ### on &lt;script&gt; add
 

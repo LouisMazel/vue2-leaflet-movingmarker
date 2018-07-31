@@ -3,13 +3,13 @@
 This is a [movingmarker plugin](https://gitlab.com/IvanSanchez/Leaflet.Marker.SlideTo) extension for [vue2-leaflet package](https://github.com/KoRiGaN/Vue2Leaflet)
 
 ## Install
-```js
+```bash
 npm install --save vue2-leaflet-movingmarker
 ```
 
 ## Demo
 
-```js
+```bash
 git clone git@github.com:LouisMazel/vue2-leaflet-movingmarker.git
 cd vue2-leaflet-movingmarker
 yarn

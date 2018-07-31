@@ -1,0 +1,35 @@
+{
+  "name": "vue2-leaflet-movingmarker",
+  "version": "0.0.1",
+  "description": "MovingMarker plugin extension for vue2-leaflet package",
+  "main": "dist/Vue2LeafletMovingmarker.js",
+  "scripts": {
+    "build": "vue build Vue2LeafletMovingmarker.vue --prod --lib --config build.config.js",
+    "example": "vue build example.vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LouisMazel/vue2-leaflet-movingmarker.git"
+  },
+  "keywords": [
+    "vue2",
+    "leaflet",
+    "movingmarker"
+  ],
+  "author": "Mazuel Loïc (https://github.com/LouisMazel)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LouisMazel/vue2-leaflet-movingmarker/issues"
+  },
+  "homepage": "https://github.com/LouisMazel/vue2-leaflet-movingmarker#readme",
+  "dependencies": {
+    "leaflet": "^1.3.1",
+    "leaflet.marker.slideto": "^0.2.0",
+    "vue2-leaflet": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "vue-cli": "~2.8.2",
+    "webpack-node-externals": "^1.5.4"
+  }
+}

@@ -52,7 +52,6 @@
     "path": "^0.12.7",
     "vue-server-renderer": "^2.6.11",
     "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.43.0",
-    "webpack-node-externals": "^1.5.4"
+    "webpack": "^4.43.0"
   }
 }

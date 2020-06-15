@@ -9,20 +9,8 @@ npm install --save vue2-leaflet-movingmarker
 
 ## Demo
 
-```bash
-git clone git@github.com:LouisMazel/vue2-leaflet-movingmarker.git
-cd vue2-leaflet-movingmarker
-yarn
-yarn example
-
-# or alternatively using npm
-npm install
-npm run example
-```
-
-Then you should be able to navigate with your browser and see the demo in http://localhost:4000/
-
-You can see the demo code in the file [example.vue](example.vue)
+[Enjoy here](https://louismazel.github.io/vue2-leaflet-movingmarker/)
+You can see the demo code in the file [Map.vue](./src/Map/index.vue)
 
 ## Usage
 

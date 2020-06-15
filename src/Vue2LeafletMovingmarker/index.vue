@@ -11,36 +11,14 @@
   import { findRealParent, propsBinder } from 'vue2-leaflet'
 
   const props = {
-    draggable: {
-      type: Boolean,
-      default: false
-    },
-    visible: {
-      type: Boolean,
-      default: true
-    },
-    latLng: {
-      type: [Object, Array],
-    },
-    icon: {
-      required: false,
-      default: () => new L.Icon.Default()
-    },
-    zIndexOffset: {
-      type: Number
-    },
-    options: {
-      type: Object,
-      default: Object
-    },
-    duration: {
-      type: Number,
-      required: true
-    },
-    keepAtCenter: {
-      type: Boolean,
-      default: false
-    }
+    draggable: { type: Boolean, default: false },
+    visible: { type: Boolean, default: true },
+    latLng: { type: [Object, Array] },
+    icon: { required: false, default: () => new L.Icon.Default() },
+    zIndexOffset: { type: Number },
+    options: { type: Object, default: Object },
+    duration: { type: Number, required: true },
+    keepAtCenter: { type: Boolean, default: false }
   }
 
   export default {
@@ -48,9 +26,7 @@
     props: props,
     data () {
       return {
-        ready: false
-      }
-    },
+        ready: false } },
     mounted () {
       const options = this.options
       if (this.icon) {
@@ -93,9 +69,7 @@
         }
       },
       setLatLng (newVal) {
-        if (newVal == null) {
-          return
-        }
+        if (newVal == null) return
 
         if (this.mapObject) {
           const oldLatLng = this.mapObject.getLatLng()

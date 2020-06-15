@@ -1,6 +1,6 @@
 <template>
   <div style="display: none;">
-    <slot v-if="ready"></slot>
+    <slot v-if="ready" />
   </div>
 </template>
 
@@ -13,29 +13,25 @@
   const props = {
     draggable: {
       type: Boolean,
-      custom: true,
       default: false
     },
     visible: {
       type: Boolean,
-      custom: true,
       default: true
     },
     latLng: {
       type: [Object, Array],
-      custom: true
     },
     icon: {
-      custom: false,
+      required: false,
       default: () => new L.Icon.Default()
     },
     zIndexOffset: {
-      type: Number,
-      custom: false
+      type: Number
     },
     options: {
       type: Object,
-      default: () => ({})
+      default: Object
     },
     duration: {
       type: Number,
@@ -48,7 +44,7 @@
   }
 
   export default {
-    name: 'l-moving-marker',
+    name: 'LMovingMarker',
     props: props,
     data () {
       return {
@@ -81,7 +77,7 @@
       this.parentContainer.removeLayer(this)
     },
     methods: {
-      setDraggable (newVal, oldVal) {
+      setDraggable (newVal) {
         if (this.mapObject.dragging) {
           newVal ? this.mapObject.dragging.enable() : this.mapObject.dragging.disable()
         }
@@ -102,8 +98,8 @@
         }
 
         if (this.mapObject) {
-          let oldLatLng = this.mapObject.getLatLng()
-          let newLatLng = {
+          const oldLatLng = this.mapObject.getLatLng()
+          const newLatLng = {
             lat: newVal[0] || newVal.lat,
             lng: newVal[1] || newVal.lng
           }

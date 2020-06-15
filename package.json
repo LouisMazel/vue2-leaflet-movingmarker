@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/LouisMazel/vue2-leaflet-movingmarker/issues"
   },
-  "homepage": "https://github.com/LouisMazel/vue2-leaflet-movingmarker#readme",
+  "homepage": "https://louismazel.github.io/vue2-leaflet-movingmarker",
   "dependencies": {
     "vue": "^2.6.11",
     "leaflet": "^1.6.0",

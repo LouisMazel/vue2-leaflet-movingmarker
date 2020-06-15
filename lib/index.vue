@@ -10,14 +10,40 @@
   import 'leaflet.marker.slideto'
 
   const props = {
-    draggable: { type: Boolean, default: false },
-    visible: { type: Boolean, default: true },
-    latLng: { type: [Object, Array] },
-    icon: { required: false, default: () => new Icon.Default() },
-    zIndexOffset: { type: Number },
-    options: { type: Object, default: Object },
-    duration: { type: Number, required: true },
-    keepAtCenter: { type: Boolean, default: false }
+    draggable: {
+      type: Boolean,
+      custom: true,
+      default: false
+    },
+    visible: {
+      type: Boolean,
+      custom: true,
+      default: true
+    },
+    latLng: {
+      type: [Object, Array],
+      custom: true
+    },
+    icon: {
+      custom: false,
+      default: () => new Icon.Default()
+    },
+    zIndexOffset: {
+      type: Number,
+      custom: false
+    },
+    options: {
+      type: Object,
+      default: () => ({})
+    },
+    duration: {
+      type: Number,
+      required: true
+    },
+    keepAtCenter: {
+      type: Boolean,
+      default: false
+    }
   }
 
   export default {

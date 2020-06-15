@@ -1,0 +1,1 @@
+#app,body,html{height:100%;margin:0}#app{display:flex}label{margin-top:20px;margin-bottom:10px}.options{padding:20px;min-width:300px;box-shadow:2px 5px 8px rgba(0,0,0,.1);display:flex;flex-direction:column;z-index:9999}.flex{display:flex;align-items:center;justify-content:space-between}input{z-index:2000}

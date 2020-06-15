@@ -2,7 +2,7 @@
   "name": "vue2-leaflet-movingmarker",
   "version": "1.0.0-beta.0",
   "description": "MovingMarker plugin extension for vue2-leaflet package",
-  "main": "dist/Vue2LeafletMovingmarker.js",
+  "main": "dist/vue2-leaflet-movingmarker.common.js",
   "scripts": {
     "build": "npm run build:lib && npm run build:docs",
     "serve": "vue-cli-service serve --mode development --open",
@@ -10,10 +10,14 @@
     "test": "vue-cli-service test:unit /test/specs",
     "lint": "vue-cli-service lint",
     "lint:style:fix": "npm run lint -- --fix",
-    "before-publish": "npm audit && npm run lint && npm i && npm run build",
+    "pre-publish": "npm run lint && npm i && npm run build",
     "build:docs": "vue-cli-service build --dest docs --mode production",
-    "build:lib": "vue build Vue2LeafletMovingmarker.vue --prod --lib --config build.config.js"
+    "build:lib": "vue-cli-service build --target lib ./lib/index.vue"
   },
+  "files": [
+    "dist/",
+    "nuxt/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/LouisMazel/vue2-leaflet-movingmarker.git"
@@ -30,6 +34,7 @@
   },
   "homepage": "https://github.com/LouisMazel/vue2-leaflet-movingmarker#readme",
   "dependencies": {
+    "vue": "^2.6.11",
     "leaflet": "^1.6.0",
     "leaflet.marker.slideto": "^0.2.0",
     "vue2-leaflet": "^2.5.2"
@@ -43,10 +48,11 @@
     "core-js": "^3.6.5",
     "eslint": "^7.2.0",
     "eslint-plugin-vue": "^6.2.2",
-    "vue": "^2.6.11",
-    "vue-cli": "^2.8.2",
+    "nuxt": "^2.12.2",
+    "path": "^0.12.7",
     "vue-server-renderer": "^2.6.11",
     "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
     "webpack-node-externals": "^1.5.4"
   }
 }

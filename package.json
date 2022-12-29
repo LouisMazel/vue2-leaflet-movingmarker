@@ -40,18 +40,18 @@
     "vue2-leaflet": "^2.5.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.4",
-    "@vue/cli-plugin-eslint": "^4.4.4",
-    "@vue/cli-service": "^4.4.4",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.1.0",
     "babel-preset-env": "^1.7.0",
     "core-js": "^3.6.5",
     "eslint": "^7.2.0",
     "eslint-plugin-vue": "^6.2.2",
-    "nuxt": "^2.12.2",
+    "nuxt": "^3.0.0",
     "path": "^0.12.7",
     "vue-server-renderer": "^2.6.11",
     "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.43.0"
+    "webpack": "^5.75.0"
   }
 }
